@@ -15,11 +15,18 @@ public class Chuyen_So_Thanh_Chu {
             System.out.println(str);
         }
         else if (10<=a && a<100){
-            if (a%10==0) {
-                for (int i = a % 10; i <= strnum.length; i++) {
-                    str = strnum[i] + "mươi";
+            if (a==10){
+                System.out.println("Mười");
+            }
+            else if (a%10==0) {
+                for (int i = a/10; i <strnum.length; i++) {
+                    str = strnum[i] + " mươi";
+                    break;
                 }
                 System.out.println(str);
+            }
+            else {
+
             }
         }
     }
