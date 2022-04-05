@@ -36,15 +36,9 @@ public class KT {
         for (int i = 0;i<arr.length;i++){
             System.out.println(arr[i]);
         }
-        for (int i = 0; i < arr.length -1; i++) {
-            if (arr[i] == a) {
-                arr[i] = arr[i+1];
-            }
-        }
-
         int newarr[] = new int[n-1];
         for (int i =0;i<newarr.length;i++){
-            arr[i] = newarr[i];
+            newarr[i] = arr[i];
             System.out.println(newarr[i]);
         }
 //     Nhập c , thêm c vào mảng:
@@ -54,10 +48,8 @@ public class KT {
         int d = sc.nextInt();
         int newarr1[] = new int[n+1];
         newarr1[d] = c;
-        for (int i =0;i<arr.length;i++){
-        }
         for (int i =0;i<newarr1.length;i++){
-            arr[i] = newarr1[i];
+            newarr1[i] = arr[i];
             System.out.println(newarr1[i]);
         }
     }
